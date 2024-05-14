@@ -73,15 +73,46 @@ for (let i = 1; i <=20; i++){
 
 // Q7
 let bakery = ["cake" , "apple pie" , "cookie" , "chips" , "patties"];
+let search = prompt("Welcome to Sweets Bakery.What do you want to order sir/maam?");
+let found = false;
+for(let i = 0; i < bakery.length; i++){
+  if(search === bakery[i]){
+        found = true;
+        document.write(`<br> Q7.Bakery <br> ${bakery[i]} is available at index ${[i]} in our bakery`);
+    }
+}   
+if(found === false){
+    document.write(`<br> Q7.Bakery <br> ${search} is not available in our bakery`);
+}
+// Q8
+let numb = [24 , 53 , 78 , 91 ,12];
+let larNum = numb[0];
+for (i = 0; i < numb.length; i++){
+    if(numb[i] > larNum){
+        larNum = numb[i];
+    }
+}
+document.write("<br><br> Q8. Largest Number <br> Array Items " + numb)
+document.write("<br> The Largest number is " + larNum)
 
+// Q9
+let smaNum = numb[0];
+for (i = 0; i < numb.length; i++){
+    if(numb[i] < smaNum){
+        smaNum = numb[i];
+    }
+}
+document.write("<br><br> Q9. Smallest Number <br> Array Items " + numb)
+document.write("<br> The smallest number is " + smaNum + "<br>") 
 
+// Q10
+document.write("Q10.<br> ");
+for (let i = 1; i <= 100; i++){
+    if(i % 5 === 0){
+        document.write(" " + [i]);
+    }
 
-
-
-
-
-
-
+}
 
 
 
